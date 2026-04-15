@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="[https://via.placeholder.com/200x100?text=Tuan+Chau+Group](https://media.licdn.com/dms/image/v2/D560BAQH_m23eGGs6yw/company-logo_200_200/company-logo_200_200/0/1692617763080?e=2147483647&v=beta&t=EQS21zhPUWnByt69Cdiz-Ykx2MnIzaR2IW4vwe5VT9s)" alt="Tuần Châu Group Logo" width="200" />
+  <img src="https://media.licdn.com/dms/image/v2/D560BAQH_m23eGGs6yw/company-logo_200_200/company-logo_200_200/0/1692617763080?e=2147483647&v=beta&t=EQS21zhPUWnByt69Cdiz-Ykx2MnIzaR2IW4vwe5VT9s" alt="Tuần Châu Group Logo" width="200" />
   
   # Tuần Châu Group - Technology Division ⚓
   
