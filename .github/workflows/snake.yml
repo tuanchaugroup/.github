@@ -1,14 +1,9 @@
-name: Generate Snake
+name: Generate Snakes
 
 on:
-  # Tự động chạy mỗi 24 giờ (vào lúc 00:00 UTC)
   schedule:
     - cron: "0 0 * * *" 
-  
-  # Cho phép bấm nút chạy thủ công từ tab Actions
   workflow_dispatch:
-  
-  # Chạy mỗi khi bạn push code lên nhánh main
   push:
     branches:
     - main
@@ -21,21 +16,30 @@ jobs:
     timeout-minutes: 5
     
     steps:
-      # Bước 1: Tạo các file SVG con rắn
-      - name: generate-snake-game-from-github-contribution-grid
-        uses: Platane/snk/svg-only@v3
+      # Bước 1: Tạo con rắn cho thangknt99
+      - name: generate-snake-thangknt99
+        uses: Platane/snk@v3
         with:
-          # Thay 'tuanchaugroup' bằng username chính xác của Org nếu cần
-          github_user_name: tuanchaugroup
+          github_user_name: thangknt99
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/snake-thangknt99.svg
+            dist/snake-thangknt99-dark.svg?palette=github-dark
         env:
-          # Cần thiết để đọc dữ liệu đóng góp công khai
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Bước 2: Đẩy file SVG đã tạo lên nhánh 'output'
-      - name: push github-contribution-grid-snake.svg to the output branch
+      # Bước 2: Tạo con rắn cho tienoho
+      - name: generate-snake-tienoho
+        uses: Platane/snk@v3
+        with:
+          github_user_name: tienoho
+          outputs: |
+            dist/snake-tienoho.svg
+            dist/snake-tienoho-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Bước 3: Đẩy tất cả file lên nhánh output
+      - name: push snakes to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
