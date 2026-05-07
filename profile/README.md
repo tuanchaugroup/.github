@@ -71,6 +71,29 @@ Chúng tôi tích cực nghiên cứu và ứng dụng các nền tảng mã ngu
 
 ---
 
+## 🐍 Team Contributions
+
+<table>
+  <tr>
+    <td align="center">
+      <h3>thangknt99</h3>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-thangknt99-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-thangknt99.svg">
+        <img alt="thangknt99 snake" src="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-thangknt99.svg">
+      </picture>
+    </td>
+    <td align="center">
+      <h3>tienoho</h3>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-tienoho-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-tienoho.svg">
+        <img alt="tienoho snake" src="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-tienoho.svg">
+      </picture>
+    </td>
+  </tr>
+</table>
+
 <div align="center">
   <i>Được xây dựng với 💡 và ☕ bởi Khối Công nghệ Tuần Châu Group.</i>
 </div>
