@@ -26,7 +26,15 @@ jobs:
             dist/snake-thangknt99-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: generate-snake-toilatu
+        uses: Platane/snk@v3
+        with:
+          github_user_name: toilatu
+          outputs: |
+            dist/snake-toilatu.svg
+            dist/snake-toilatu-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Bước 2: Tạo con rắn cho tienoho
       - name: generate-snake-tienoho
         uses: Platane/snk@v3
