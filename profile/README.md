@@ -64,13 +64,6 @@ Chúng tôi tích cực nghiên cứu và ứng dụng các nền tảng mã ngu
 
 ---
 
-## 📊 Github Analytics
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TuanChauGroup&show_icons=true&theme=transparent&hide_border=true&title_color=00529B&text_color=333333" alt="GitHub Stats" />
-</div>
-
----
-
 ## 🐍 Team Contributions
 
 <table>
@@ -81,6 +74,14 @@ Chúng tôi tích cực nghiên cứu và ứng dụng các nền tảng mã ngu
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-thangknt99-dark.svg">
         <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-thangknt99.svg">
         <img alt="thangknt99 snake" src="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-thangknt99.svg">
+      </picture>
+    </td>
+    <td align="center">
+      <h3>toilatu</h3>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-toilatu-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-toilatu.svg">
+        <img alt="toilatu snake" src="https://raw.githubusercontent.com/tuanchaugroup/.github/output/snake-toilatu.svg">
       </picture>
     </td>
     <td align="center">
