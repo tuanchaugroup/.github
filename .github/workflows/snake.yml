@@ -18,7 +18,10 @@ jobs:
     
     steps:
       # Giữ workflow không bị GitHub tắt sau 60 ngày repo không hoạt động
-      - uses: gautamkrishnar/keepalive-workflow@v2
+      - name: keepalive
+        run: gh api -X PUT repos/${{ github.repository }}/actions/workflows/snake.yml/enable
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Bước 1: Tạo con rắn cho thangknt99
       - name: generate-snake-thangknt99
