@@ -1,0 +1,48 @@
+name: Organization GitHub Metrics
+
+# 08:17 in Vietnam (UTC+7), every day.
+# Scheduled workflows can be delayed by GitHub.
+on:
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: organization-metrics-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  organization-metrics:
+    if: github.repository == 'tuanchaugroup/.github'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Require METRICS_TOKEN
+        shell: bash
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [[ -z "$METRICS_TOKEN" ]]; then
+            echo "::error title=METRICS_TOKEN missing::Add a PAT with read:org to the repository Actions secret METRICS_TOKEN. See docs/organization-metrics.md"
+            exit 1
+          fi
+
+      - name: Generate public organization metrics
+        # Immutable SHA resolved from lowlighter/metrics 'latest' branch on 2026-11-11.
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        with:
+          user: tuanchaugroup
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          filename: assets/metrics/organization.svg
+          base: header, repositories
+          repositories_affiliations: owner
+          config_timezone: Asia/Ho_Chi_Minh
+          output_action: commit
+          committer_branch: main
+          committer_message: 'chore(metrics): refresh public organization statistics [skip ci]'
+          plugins_errors_fatal: yes

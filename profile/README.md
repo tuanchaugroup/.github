@@ -64,6 +64,14 @@ Chúng tôi tích cực nghiên cứu và ứng dụng các nền tảng mã ngu
 
 ---
 
+## 📊 Số liệu GitHub của tổ chức (công khai)
+
+<img src="https://raw.githubusercontent.com/tuanchaugroup/.github/main/assets/metrics/organization.svg" alt="Tuần Châu Group — GitHub organization metrics (public repositories only)" width="780" />
+
+<sub>Hình được tạo bằng [lowlighter/metrics](https://github.com/lowlighter/metrics), dự kiến cập nhật hằng ngày lúc 08:17 (giờ Việt Nam) sau khi thiết lập `METRICS_TOKEN`. Đây là thống kê từ dữ liệu **công khai**, không đại diện cho toàn bộ dự án private hoặc hiệu suất của nhân sự. Xem [hướng dẫn vận hành](https://github.com/tuanchaugroup/.github/blob/main/docs/organization-metrics.md).</sub>
+
+---
+
 ## 🐍 Team Contributions
 
 <table>

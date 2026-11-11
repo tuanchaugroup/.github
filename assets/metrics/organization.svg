@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="160" viewBox="0 0 780 160" role="img" aria-labelledby="title desc">
+  <title id="title">Tuần Châu Group organization metrics</title>
+  <desc id="desc">Awaiting first successful lowlighter metrics workflow run; METRICS_TOKEN is required.</desc>
+  <rect width="780" height="160" rx="12" fill="#f5f7fa"/>
+  <rect x="16" y="16" width="748" height="128" rx="8" fill="#fff" stroke="#d5dae1"/>
+  <text x="36" y="64" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#263747">Tuần Châu Group · GitHub Metrics</text>
+  <text x="36" y="99" font-family="Arial, sans-serif" font-size="15" fill="#586777">Đang chờ chạy workflow lần đầu và cấu hình METRICS_TOKEN</text>
+  <text x="36" y="123" font-family="Arial, sans-serif" font-size="12" fill="#687989">Chỉ thống kê repository công khai</text>
+</svg>
