@@ -10,12 +10,16 @@ on:
 
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
+      actions: write # keepalive cần quyền này để bật lại workflow
     runs-on: ubuntu-latest
     timeout-minutes: 5
     
     steps:
+      # Giữ workflow không bị GitHub tắt sau 60 ngày repo không hoạt động
+      - uses: gautamkrishnar/keepalive-workflow@v2
+
       # Bước 1: Tạo con rắn cho thangknt99
       - name: generate-snake-thangknt99
         uses: Platane/snk@v3
