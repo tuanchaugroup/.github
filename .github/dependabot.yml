@@ -1,0 +1,21 @@
+# Dependabot policy for THIS repository (tuanchaugroup/.github) only.
+# Central configuration for other repositories lives in dependabot/.
+# Dependabot does not inherit this file across an organization.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+      time: "09:00"
+      timezone: "Asia/Ho_Chi_Minh"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(deps)"
+    groups:
+      actions-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
